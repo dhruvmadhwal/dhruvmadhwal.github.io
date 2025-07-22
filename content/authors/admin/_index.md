@@ -1,13 +1,12 @@
 ---
 # Display name
-title: 吳健雄
+title: Dhruv Madhwal
 
-# Name pronunciation (optional)
-name_pronunciation: Chien Shiung Wu
+##
 
 # Full name (for SEO)
-first_name: Shiung Wu
-last_name: Chien
+first_name: Dhruv
+last_name: Madhwal
 
 # Status emoji
 status:
@@ -20,40 +19,33 @@ superuser: true
 highlight_name: true
 
 # Role/position/tagline
-role: Chief Scientist
+role: Graduate Student
 
 # Organizations/Affiliations to display in Biography blox
 organizations:
-  - name: OpenAI
-    url: https://openai.com/
+  - name: Arizona State University
+    url: https://www.asu.edu/
 
 # Social network links
 # Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
 profiles:
-  - icon: at-symbol
-    url: 'mailto:your-email@example.com'
-    label: E-mail Me
-  - icon: brands/x
-    url: https://twitter.com/GetResearchDev
-  - icon: brands/instagram
-    url: https://www.instagram.com/
+  - icon: brands/google
+    url: 'mailto:dhruvmadhwal@gmail.com'
+    label: Gmail
   - icon: brands/github
-    url: https://github.com/gcushen
+    url: https://github.com/dhruvmadhwal
   - icon: brands/linkedin
-    url: https://www.linkedin.com/
-  - icon: academicons/google-scholar
-    url: https://scholar.google.com/
-  - icon: academicons/orcid
-    url: https://orcid.org/
+    url: https://www.linkedin.com/in/dhruvmadhwal/
+
 
 interests:
-  - Artificial Intelligence
-  - Computational Linguistics
   - Information Retrieval
+  - Large Language Models
+  - Deep Learning 
 
 education:
-  - area: PhD Artificial Intelligence
-    institution: Stanford University
+  - area: MS Computer Science
+    institution: Arizona State University
     date_start: 2016-01-01
     date_end: 2020-12-31
     summary: |
@@ -61,8 +53,8 @@ education:
     button:
       text: 'Read Thesis'
       url: 'https://example.com'
-  - area: MEng Artificial Intelligence
-    institution: Massachusetts Institute of Technology
+  - area: MSc. Physics
+    institution: Birla Institute of Technology and Science
     date_start: 2016-01-01
     date_end: 2020-12-31
     summary: |
@@ -72,8 +64,8 @@ education:
       - lorem ipsum dolor sit amet, consectetur adipiscing elit
       - lorem ipsum dolor sit amet, consectetur adipiscing elit
       - lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - area: BSc Artificial Intelligence
-    institution: Massachusetts Institute of Technology
+  - area: BE Electronics and Instrumentation
+    institution: Birla Institute of Technology and Science, Goa
     date_start: 2016-01-01
     date_end: 2020-12-31
     summary: |
@@ -181,6 +173,6 @@ awards:
       Object-oriented programming (OOP) lets you specify relationships between functions and the objects that they can act on, helping you manage complexity in your code. This is an intermediate level course, providing an introduction to OOP, using the S3 and R6 systems. S3 is a great day-to-day R programming tool that simplifies some of the functions that you write. R6 is especially useful for industry-specific analyses, working with web APIs, and building GUIs.
 ---
 
-## About Me
 
-Chien Shiung Wu is a professor of artificial intelligence at the Stanford AI Lab. Her research interests include distributed robotics, mobile computing and programmable matter. She leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
+## About Me
+Dhruv Madhwal is a graduate student and researcher specializing in Information Retrieval, Large Language Models, and Deep Learning. He is currently pursuing an MS in Computer Science at Arizona State University, and holds an MSc in Physics from MIT and a BE in Electronics and Instrumentation from BITS Goa. Dhruv has experience in both academic research and industry, with a strong background in machine learning, data science, and cloud infrastructure. He is passionate about advancing AI technologies and applying them to solve real-world problems.
