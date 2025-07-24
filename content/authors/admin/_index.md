@@ -29,7 +29,7 @@ organizations:
 # Social network links
 # Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
 profiles:
-  - icon: brands/google
+  - icon: at-symbol
     url: 'mailto:dhruvmadhwal@gmail.com'
     label: Gmail
   - icon: brands/github
@@ -39,65 +39,72 @@ profiles:
 
 
 interests:
-  - Information Retrieval
-  - Large Language Models
+  - Artifical Intelligence
   - Deep Learning 
+  - Information Retrieval
+  - AI Agents
+  - Large Language Models
+
+  
 
 education:
   - area: MS Computer Science
     institution: Arizona State University
-    date_start: 2016-01-01
-    date_end: 2020-12-31
+    date_start: 2024-08-22
+    date_end: 2026-05-01
     summary: |
-      Thesis on _Why LLMs are awesome_. Supervised by [Prof Joe Smith](https://example.com). Presented papers at 5 IEEE conferences with the contributions being published in 2 Springer journals.
-    button:
-      text: 'Read Thesis'
-      url: 'https://example.com'
-  - area: MSc. Physics
-    institution: Birla Institute of Technology and Science
-    date_start: 2016-01-01
-    date_end: 2020-12-31
-    summary: |
-      GPA: 3.8/4.0
+      **GPA:** 4.11/4.00
 
-      Courses included:
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - area: BE Electronics and Instrumentation
-    institution: Birla Institute of Technology and Science, Goa
-    date_start: 2016-01-01
-    date_end: 2020-12-31
-    summary: |
-      GPA: 3.4/4.0
+      **Relevant Courses:** Statistical Machine Learning, Topics in Natural Language Processing, Data Intensive Systems for Machine Learning, Knowledge Representation and Reasoning, Cloud Computing
       
-      Courses included:
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-work:
-  - position: Director of Cloud Infrastructure
-    company_name: GenCoin
-    company_url: ''
-    company_logo: ''
-    date_start: 2021-01-01
-    date_end: ''
-    summary: |2-
-      Responsibilities include:
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - position: Backend Software Engineer
-    company_name: X
-    company_url: ''
-    company_logo: ''
-    date_start: 2016-01-01
-    date_end: 2020-12-31
+    # button:
+    #   text: 'Read Thesis'
+    #   url: 'https://example.com'
+  - area: MSc. Physics
+    institution: Birla Institute of Technology and Science, Goa Campus
+    date_start: 2017-08-01
+    date_end: 2022-05-01
     summary: |
-      Responsibilities include:
-      - Migrated infrastructure to a new data center
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
+      **GPA:** 7.61/10
+
+  - area: BE Electronics and Instrumentation
+    institution: Birla Institute of Technology and Science, Goa Campus
+    date_start: 2017-08-01
+    date_end: 2022-05-01
+    summary: |
+      **GPA:** 7.61/10
+  
+work:
+  - position: Data Scientist
+    company_name: Trukker Technologies
+    company_url: ''
+    company_logo: '/uploads/trukkertech_logo.jpeg'
+    date_start: 2022-07-01
+    date_end: 2024-07-01
+    summary: |2-
+      - Deployed a RAG-based customer support chatbot using AWS Bedrock, Pinecone, and AWS Lex, delivering instant query resolution (orders, billing, tickets) and reducing support volume by ~22%.
+      - Built dynamic pricing engine (XGBoost, LightGBM) trained on historical shipping data and external signals (fuel, demand etc.). Backtesting revealed ~12% improvement in quote acceptance.
+      - Automated email parsing pipeline leveraging GPT-3.5/LlamaIndex for structured data extraction from 4K+ monthly emails, achieving 96% extraction accuracy, reducing manual data entry by ~30%.
+      - Built a centralized Spark-based batch processing and ETL pipeline, consolidating data from Kafka, REST APIs, and databases into Redshift, reducing duplication by ~53%.
+      - Engineered a real-time invoice streaming system with Kafka & MongoDB Change Streams to sync financial data across multiple systems, lowering sync errors by ~12%.
+  - position: Data Science Intern
+    company_name: Carelon Global Solutions
+    company_url: ''
+    company_logo: ''
+    date_start: 2022-01-01
+    date_end: 2022-06-30
+    summary: |2-
+      - Created an automated document classification pipeline by fine-tuning BioBERT on patient medical records, enabling the approval or rejection of prior authorization (PA) requests with 96% accuracy.
+      - Executed text extraction from medical documents using computer vision with OpenCV and PyTesseract, achieving 98% OCR accuracy.
+  - position: AI/ML Engineering Intern
+    company_name: Samsung Research Institute
+    company_url: ''
+    company_logo: ''
+    date_start: 2021-07-01
+    date_end: 2021-12-31
+    summary: |2-
+      - Developed a TensorFlow Lite-based, context-aware recommendation system for Samsung app functionalities, leveraging user interactions and Bixby data to enhance personalization, achieving a 71% Hit Rate@5.
+      - Implemented MLflow & Airflow workflows, automating model versioning, deployment, and monitoring across multiple ML projects, enhancing efficiency and traceability.
 
 # Skills
 # Add your own SVG icons to `assets/media/icons/`
@@ -175,4 +182,13 @@ awards:
 
 
 ## About Me
-Dhruv Madhwal is a graduate student and researcher specializing in Information Retrieval, Large Language Models, and Deep Learning. He is currently pursuing an MS in Computer Science at Arizona State University, and holds an MSc in Physics from MIT and a BE in Electronics and Instrumentation from BITS Goa. Dhruv has experience in both academic research and industry, with a strong background in machine learning, data science, and cloud infrastructure. He is passionate about advancing AI technologies and applying them to solve real-world problems.
+I'm a grad student at ASU's CoRAL Lab, building agentic AI and retrieval systems. I've worked on ML and data science projects at Samsung, Carelon, and several fast-paced startups, tackling problems across domains like healthcare analytics, recommendation systems, and consumer-focused technologies. Before ASU, I earned an MSc in Physics and BE in Electronics from BITS Pilani Goa, blending analytical rigor with technical expertise. I'm interested in both foundational AI research and its practical applications, and I'm actively looking for opportunities that bridge the two.
+
+
+
+
+
+
+
+
+
