@@ -8,6 +8,12 @@ title: Dhruv Madhwal
 first_name: Dhruv
 last_name: Madhwal
 
+# SEO Meta Description
+description: "Graduate Researcher at ASU CoRAL Lab specializing in Information Retrieval, AI Agents, and Large Language Models. Expert in RAG systems, multi-hop reasoning, and machine unlearning. Former Data Scientist with experience in fraud detection, dynamic pricing, and customer support automation."
+
+# SEO Keywords
+keywords: ["Information Retrieval", "AI Agents", "Large Language Models", "Machine Learning", "Deep Learning", "RAG Systems", "Multi-hop Reasoning", "Machine Unlearning", "Fraud Detection", "Dynamic Pricing", "Data Science", "PyTorch", "PostgreSQL", "AWS", "ASU", "CoRAL Lab"]
+
 # Status emoji
 status:
   icon: ☕️
@@ -39,11 +45,11 @@ profiles:
 
 
 interests:
-  - Artifical Intelligence
-  - Deep Learning 
   - Information Retrieval
   - AI Agents
   - Large Language Models
+  - Artifical Intelligence
+  - Deep Learning
 
   
 

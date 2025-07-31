@@ -11,7 +11,7 @@ main:
     url: /#research
     weight: 20
   - name: Projects
-    url: projects/
+    url: /#selected-projects
     weight: 30
   - name: Skills
     url: /#skills

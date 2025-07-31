@@ -47,6 +47,7 @@ sections:
         - **Datasets:** FanOutQA, MuSiQue, Frames, QUEST  
         - **Goal:** Beat SOTA and reveal current benchmark weaknesses.  
       
+        ---
 
         <div class="flex justify-between items-baseline gap-2 mt-12 mb-2">
           <span class="font-bold text-[2rem]">InfoboxIQ: Text to Infobox synchronization (Wikipedia) — CoRAL Lab, ASU</span>
@@ -78,11 +79,49 @@ sections:
       css_class: wide
 
   - block: markdown
+    id: selected-projects
     content:
       title: "🎯 Selected Projects"
       subtitle: ""
       text: |-
-        *Coming soon...*
+        ### 🧠 Machine *Unlearning* in Small Language Models
+        Teaching small LMs (~3–4B params) to forget specific facts without retraining from scratch while preserving general ability. Used lightweight procedures like gradient-ascent updates and random-label fine-tuning to make compact LMs "forget on demand" with minimal collateral damage. Also support quantized inference to run efficiently on commodity GPUs.
+        
+        **Key Features:**
+        - **Targeted forgetting:** Gradient Ascent unlearning and Random-Labeling + SFT procedures.
+        - **Model preservation:** Retain general QA performance while removing specific facts.
+        - **Robust eval suite:** Automated BLEU / ROUGE-L / BERTS scores, per-fact unlearn/retain tagging, ablations (label similarity), and spot manual validation.
+        - **Quantization & efficiency:** FP16 plus 4-bit / 8-bit inference and LoRA/PEFT adapters to reduce VRAM and speed experimentation
+        
+        **Technologies:** PyTorch, Hugging Face Transformers, LoRA/PEFT, bitsandbytes (4-/8-bit), Small LMs (Llama-3.2-3B-Instruct, Phi-3.5-mini-instruct, Nemotron-Mini-4B-Instruct)
+
+        ---
+
+        ### 🔍 InQuery ML: SQL-Native ID Image Fraud Detection
+        Built an end-to-end ID-image fraud detector with a lightweight CNN, achieving ~92% accuracy on held-out data. The model is exposed inside SQL via a PostgreSQL PL/Python UDF, so analysts can score images for fraud using only SQL—no Python or separate service calls required.
+        
+        **Key Features:**
+        - **SQL-only workflow:** Fraud scoring happens in a query (`SELECT label, confidence FROM predict_fraud(image_b64)`), enabling analysts to operationalize ML without leaving SQL
+        - **Postgres-native inference:** PL/Python UDF returns (class, confidence) for in-database predictions and auditability at the DB layer
+        - **TorchServe integration:** Custom handler (base64 → tensor → prediction → JSON) for portable, production-style serving
+        - **Analyst-ready queries:** Views and filters to flag newly issued IDs predicted fraudulent and identify repeat submitters
+        - **Performance benchmarking:** Documented trade-offs—row-wise UDF calls are simple but slower; batched inference is preferred for high volume
+        
+        **Technologies:** PyTorch, TorchServe, PostgreSQL (PL/Python), Computer Vision
+
+        ---
+
+        ### 📡 Edge-to-Cloud Face Recognition on AWS
+        Real-time face recognition for a camera stream using AWS IoT. Faces are detected at the edge with MTCNN (via a Greengrass component), only cropped faces are sent to the cloud, and FaceNet (in Lambda) returns identity + confidence. Reduced bandwidth and keeping raw frames local.
+        
+        **Key Features:**
+        - **Edge detection, cloud recognition:** Low-latency loop that keeps heavy vision local and runs identity matching in the cloud
+        - **Privacy & efficiency:** Only face crops leave the device, raw video never leaves the edge
+        - **Reliable messaging:** Robust IoT messaging with delivery guarantees and request/response correlation
+        - **Operational visibility:** Metrics and logs for end-to-end health checks and troubleshooting
+        
+        **Technologies:** AWS IoT Core, Greengrass v2, AWS Lambda, Amazon SQS, CloudWatch, MTCNN, FaceNet, Python
+           
     design:
       css_class: wide
 
@@ -91,7 +130,7 @@ sections:
       title: ""
       subtitle: ""
       text: |-
-        **Check out my [projects](/projects/) and [work experience](/experience/)!**
+        **Check out my [work experience](/experience/)!**
     
 
   # - block: collection
