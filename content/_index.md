@@ -59,6 +59,41 @@ sections:
         - **Evaluation:** per‑key accuracy, coverage/completeness, hallucination rate, overall text‑to‑table sync quality.
     
 
+  - block: markdown
+    id: skills
+    content:
+      title: "🛠️ Technical Skills"
+      subtitle: ""
+      text: |-
+        **Programming Languages & Frameworks:** Python, C/C++, MATLAB, Flask, FastAPI
+
+        **Machine Learning:** PyTorch, TensorFlow, Keras, scikit-learn, Transformers, Hugging Face, OpenCV, pandas, NumPy
+
+        **LLM/Agent & RAG Stack:** LangChain/LangGraph, AutoGen, ChromaDB, Pinecone, FAISS
+
+        **Data Engineering & Databases:** Kafka, Spark, Airflow, MySQL, Postgres, MongoDB
+
+        **Cloud & DevOps:** AWS, Docker, Git, CI/CD, MLflow
+    design:
+      css_class: wide
+
+  - block: markdown
+    content:
+      title: "🎯 Selected Projects"
+      subtitle: ""
+      text: |-
+        *Coming soon...*
+    design:
+      css_class: wide
+
+  - block: markdown
+    content:
+      title: ""
+      subtitle: ""
+      text: |-
+        **Check out my [projects](/projects/) and [work experience](/experience/)!**
+    
+
   # - block: collection
   #   id: papers
   #   content:
