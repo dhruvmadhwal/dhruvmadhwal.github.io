@@ -1,9 +1,11 @@
 ---
-title: PyTorch
-date: 2023-10-26
+title: Multi-Hop Reasoning Agent
+date: 2025-06-01
 links:
-  - type: site
-    url: https://github.com/pytorch/pytorch
+  - type: demo
+    url: https://multi-hop-agent.streamlit.app/
+  - type: code
+    url: https://github.com/dhruvmadhwal/multi-hop-agent
 tags:
   - Hugo
   - HugoBlox

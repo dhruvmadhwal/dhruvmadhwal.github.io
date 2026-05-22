@@ -1,0 +1,23 @@
+/* Pull the homepage hero closer to the navbar without affecting later sections. */
+.compact-hero .resume-biography {
+  padding-top: 1rem;
+}
+
+@media (min-width: 768px) {
+  .compact-hero .resume-biography {
+    padding-top: 2rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .compact-hero .resume-biography {
+    padding-top: 1rem;
+  }
+}
+
+/* Let the research summary use more horizontal space on desktop. */
+@media (min-width: 1024px) {
+  .wide-research .max-w-prose {
+    max-width: 58rem;
+  }
+}

@@ -13,7 +13,7 @@ hugoblox:
   # ────────────────────────────────────────────────────────────────────────────
   identity:
     # Site name - shown in navbar, footer, copyright, and browser title by default
-    name: "Your Name"
+    name: "Dhruv Madhwal"
     # Legal entity for copyright notices (defaults to name if not set)
     organization: ""
     # Schema.org type for structured data
@@ -209,7 +209,7 @@ hugoblox:
     pirsch:
       site_id: ""
     clarity:
-      project_id: ""
+      project_id: "wuxh09x1pd"
     baidu:
       site_id: ""
 
@@ -260,7 +260,7 @@ hugoblox:
   # Privacy and compliance features
   # ────────────────────────────────────────────────────────────────────────────
   privacy:
-    enable: false
+    enable: true
     anonymize_analytics: true
 
   # ────────────────────────────────────────────────────────────────────────────

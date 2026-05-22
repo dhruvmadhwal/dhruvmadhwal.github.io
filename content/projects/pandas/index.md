@@ -1,13 +1,16 @@
 ---
-title: Pandas
-date: 2023-10-26
+title: Dishcovery
+date: 2025-10-26 
 links:
-  - type: site
-    url: https://github.com/pandas-dev/pandas
+  - type: demo
+    url: https://dishcovery-38p.pages.dev/
+  - type: code 
+    url: https://github.com/dhruvmadhwal/Dishcovery
 tags:
-  - Hugo
-  - HugoBlox
-  - Markdown
+  - 
+  # - Hugo
+  # - HugoBlox
+  # - Markdown
 ---
 
 Flexible and powerful data analysis / manipulation library for Python, providing labeled data structures.

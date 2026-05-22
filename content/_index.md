@@ -20,6 +20,7 @@ sections:
         education: ''
         interests: ''
     design:
+      css_class: compact-hero
       # Use the new Gradient Mesh which automatically adapts to the selected theme colors
       background:
         gradient_mesh:
@@ -33,17 +34,33 @@ sections:
       avatar:
         size: medium # Options: small (150px), medium (200px, default), large (320px), xl (400px), xxl (500px)
         shape: circle # Options: circle (default), square, rounded
+  - block: collection
+    id: projects
+    content:
+      title: Projects
+      text: I enjoy making things. Here are a selection of projects that I have worked on over the years.
+      filters:
+        folders:
+          - projects
+    design:
+      view: article-grid
+      fill_image: false
+      columns: 3
+      show_date: false
+      show_read_time: false
+      show_read_more: false
   - block: markdown
     content:
       title: '📚 My Research'
       subtitle: ''
       text: |-
-        Use this area to speak to your mission. I'm a research scientist in the Moonshot team at DeepMind. I blog about machine learning, deep learning, and moonshots.
+        I’m a thesis student at Arizona State University working on reliable AI for language models. My thesis studies how to detect hallucinations and knowledge gaps in LLMs for multi-hop question answering, with the goal of making models better at knowing when they should abstain.
 
-        I apply a range of qualitative and quantitative methods to comprehensively investigate the role of science and technology in the economy.
+        I have also worked on CLIP-style vision-language models and compositional reasoning, and have built NL-to-SQL benchmarks for privacy-sensitive domains such as healthcare, law, and criminal justice.
 
-        Please reach out to collaborate 😃
+        Please reach out if you’re interested in collaborating on reliable AI, LLM/VLM evaluation, or applied ML systems.
     design:
+      css_class: wide-research
       columns: '1'
   - block: collection
     id: papers
@@ -66,15 +83,6 @@ sections:
         exclude_featured: false
     design:
       view: citation
-  - block: collection
-    id: talks
-    content:
-      title: Recent & Upcoming Talks
-      filters:
-        folders:
-          - events
-    design:
-      view: card
   - block: collection
     id: news
     content:
