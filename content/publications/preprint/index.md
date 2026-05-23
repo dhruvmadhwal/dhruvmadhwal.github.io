@@ -1,11 +1,13 @@
 ---
-title: "An example preprint / working paper"
+title: "Concrete Jungle: Towards Concreteness Paved Contrastive Negative Mining for Compositional Understanding"
 authors:
-- me
-date: "2019-04-07T00:00:00Z"
+  - Eun Woo Im
+  - me
+  - Vivek Gupta
+date: "2026-04-14T00:00:00Z"
 
 # Schedule page publish date (NOT publication's date).
-publishDate: "2017-01-01T00:00:00Z"
+publishDate: "2026-05-23T00:00:00Z"
 
 # Publication type.
 # Accepts a single type but formatted as a YAML list (for Hugo requirements).
@@ -13,47 +15,49 @@ publishDate: "2017-01-01T00:00:00Z"
 publication_types: ["article"]
 
 # Publication name and optional abbreviated publication name.
-publication: ""
-publication_short: ""
+publication: "arXiv preprint arXiv:2604.13313"
+publication_short: "arXiv 2026"
 
-abstract: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.
+abstract: |
+  Vision-Language Models demonstrate remarkable capabilities but often struggle
+  with compositional reasoning, particularly around word order and attribute
+  binding. In this work, we study how the quality of contrastive negatives
+  shapes that weakness and argue that lexical concreteness is a key factor in
+  constructing more informative training pairs. We introduce ConcretePlant to
+  systematically manipulate perceptually grounded concepts and Cement loss to
+  better balance easy and difficult pairs during optimization. Together, these
+  ideas form Slipform, a framework that improves compositional understanding
+  while also strengthening retrieval and probing performance.
 
 # Summary. An optional shortened abstract.
-summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum.
+summary: |
+  We study how concreteness-aware negative mining can improve compositional
+  understanding in vision-language models, and introduce ConcretePlant,
+  Cement loss, and Slipform to make contrastive learning more informative.
 
 tags:
-- Large Language Models
+  - Vision-Language Models
+  - Compositional Reasoning
+  - Contrastive Learning
+  - CLIP 
+  
 
 featured: true
 
-hugoblox:
-  ids:
-    arxiv: 1512.04133v1
+share: false
 
 links:
-- type: preprint
-  provider: arxiv
-  id: 1512.04133v1
-- type: code
-  url: https://github.com/HugoBlox/kit
-- type: slides
-  url: https://www.slideshare.net/
-- type: dataset
-  url: "#"
-- type: poster
-  url: "#"
-- type: source
-  url: "#"
-- type: video
-  url: https://youtube.com
-- type: custom
-  label: Custom Link
-  url: http://example.org
+  - type: preprint
+    provider: arxiv
+    id: 2604.13313
+    label: Paper
+  - type: code
+    url: http://github.com/eunwooim/my_n2clip
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder. 
 image:
-  caption: 'Image credit: [**Unsplash**](https://unsplash.com/photos/s9CC2SKySJM)'
+  caption: ''
   focal_point: ""
   preview_only: false
 
@@ -62,8 +66,7 @@ image:
 #   Simply enter your project's folder or file name without extension.
 #   E.g. `internal-project` references `content/projects/internal-project/index.md`.
 #   Otherwise, set `projects: []`.
-projects:
-- internal-project
+projects: []
 
 # Slides (optional).
 #   Associate this publication with Markdown slides.
@@ -73,9 +76,30 @@ projects:
 slides: ""
 ---
 
-This work is driven by the results in my [previous paper](/publications/conference-paper/) on LLMs.
+This preprint explores a simple but important question in vision-language
+learning: what kinds of negative examples actually teach models to understand
+composition rather than memorize shallow correlations?
 
-> [!NOTE]
-> Create your slides in Markdown - click the *Slides* button to check out the example.
+<figure>
+  <img src="concrete-jungle.png" alt="ConcretePlant and Slipform pipeline for concreteness-aware negative mining">
+  <figcaption>
+    ConcretePlant and Slipform generate concreteness-aware hard negatives to improve compositional learning in vision-language models.
+  </figcaption>
+</figure>
 
-Add the publication's **full text** or **supplementary notes** here. You can use rich formatting such as including [code, math, and images](https://docs.hugoblox.com/content/writing-markdown-latex/).
+We focus on a persistent weakness in many vision-language models: they often
+struggle when meaning depends on the precise arrangement of words or the
+binding between attributes and objects. Rather than redesigning the whole
+architecture, this work studies the data side of the problem and asks how to
+construct better contrastive signals during training.
+
+Our central idea is that lexical concreteness matters. Swapping or modifying
+highly concrete concepts tends to create sharper semantic and visual
+differences, which makes negative examples more informative for learning. On
+top of that, we introduce a margin-based objective, Cement loss, to keep easy
+examples from dominating optimization and crowding out harder compositional
+cases.
+
+Together, these ideas form Slipform, which improves compositional benchmarks
+while also helping on retrieval and probing tasks. If you'd like to read the
+paper, you can find the arXiv preprint [here](https://arxiv.org/abs/2604.13313).
